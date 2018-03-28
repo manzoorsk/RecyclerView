@@ -42,11 +42,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder>{
 
         holder.text_view.setText(name);
         holder.image_view.setImageResource(images);
+        holder.text.setText(name);
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
             openDetailActivity(name,images);
+
                 Toast.makeText(context,name,Toast.LENGTH_LONG).show();
             }
         });

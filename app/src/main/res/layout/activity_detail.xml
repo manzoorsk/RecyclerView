@@ -11,5 +11,6 @@
 
     <include layout="@layout/conent_detail"/>
 
+
 </android.support.design.widget.CoordinatorLayout>
 

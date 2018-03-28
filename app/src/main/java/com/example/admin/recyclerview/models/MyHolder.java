@@ -12,13 +12,15 @@ import com.example.admin.recyclerview.R;
  */
 public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-    TextView text_view;
+    TextView text_view,text;
     ImageView image_view;
     ItemClickListener itemClickListener;
+
     public MyHolder(View itemView) {
         super(itemView);
         text_view= (TextView) itemView.findViewById(R.id.text_view);
         image_view=(ImageView)itemView.findViewById(R.id.image_view);
+        text=(TextView)itemView.findViewById(R.id.sample);
         itemView.setOnClickListener(this);
     }
 
